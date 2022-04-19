@@ -17,8 +17,16 @@ def snake_cafe():
             menu[order] = 0
             print(f"Sorry {order} is not on our menu")
             continue
-        menu[order] += 1
-        print(f"**{menu[order]} order of {order} have been added to your meal")
-
+        # adds plural to orders- definitely must be better way
+        elif menu[order] >= 1:
+            menu[order] += 1
+            print(f"**{menu[order]} orders of {order} have been added to your meal")
+        else:
+            menu[order] += 1
+            print(f"**{menu[order]} order of {order} have been added to your meal")
+        # loops through dictionary and gives order total
+        for key,value in menu.items():
+            if value is not 0:
+                print(f"You now have {value}: {key} in your order")
 
 snake_cafe()
