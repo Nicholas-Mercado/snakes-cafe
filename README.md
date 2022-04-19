@@ -2,6 +2,7 @@
 # LAB - Class 01
 
 Project: snakes_cafe
+
 Author: Nicholas Mercado
 
 ## Links and Resources
@@ -12,7 +13,7 @@ Author: Nicholas Mercado
 
 ## Setup
 
-## How to initialize/run your application (where applicable)
+## How to initialize/run your application
 
 python3 snakes_cafe.py
 
